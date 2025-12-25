@@ -1,0 +1,241 @@
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syed Faiq Haider Naqvi - Portfolio</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%2310B981' d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z'/%3E%3C/svg%3E" type="image/svg+xml">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-green': '#10B981', // Emerald 500
+                        'secondary-amber': '#F59E0B', // Amber 500
+                        'dark-bg': '#0A0A0A', // Very dark gray
+                        'dark-card': '#1A1A1A', // Slightly lighter dark for cards
+                        'light-text': '#E5E7EB', // Gray 200
+                        'muted-text': '#9CA3AF', // Gray 400
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'], // Or any other modern sans-serif
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://rsms.me/inter/inter.css'); /* Adding Inter font for a modern look */
+        html { font-family: 'Inter', sans-serif; }
+        @supports (font-variation-settings: normal) {
+          html { font-family: 'Inter var', sans-serif; }
+        }
+    </style>
+</head>
+<body class="bg-dark-bg text-light-text antialiased">
+    <div class="container mx-auto px-4 py-8 md:px-8 lg:px-12">
+
+        <!-- Hero Section -->
+        <section id="hero" class="min-h-screen flex flex-col items-center justify-center text-center py-16">
+            <h1 class="text-5xl md:text-7xl font-extrabold text-primary-green leading-tight mb-4">
+                SYED FAIQ HAIDER NAQVI
+            </h1>
+            <p class="text-xl md:text-3xl text-secondary-amber mb-8 animate-pulse">
+                Computer Science Student | Web Developer | Cybersecurity Enthusiast
+            </p>
+            <a href="#projects" class="inline-block px-8 py-3 bg-primary-green text-dark-bg font-bold rounded-full text-lg hover:scale-105 transition-transform duration-300 shadow-lg shadow-primary-green/30">
+                View My Projects
+            </a>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-16 md:py-24">
+            <h2 class="text-4xl font-bold text-center mb-12 text-primary-green">About Me</h2>
+            <div class="max-w-3xl mx-auto text-lg leading-relaxed text-muted-text bg-dark-card p-8 rounded-lg shadow-xl border border-secondary-amber/20">
+                <p class="mb-4">
+                    I am a dedicated Computer Science student currently pursuing my Bachelor's degree at Ghulam Ishaq Khan Institute of Engineering Sciences and Technology (GIKI), with an expected graduation in 2026.
+                </p>
+                <p>
+                    My objective is to contribute to innovative projects, continuously learn, and gain hands-on experience, making meaningful contributions in areas spanning web development, cybersecurity, and advanced algorithms.
+                </p>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-16 md:py-24">
+            <h2 class="text-4xl font-bold text-center mb-12 text-primary-green">Skills</h2>
+            <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-dark-card p-6 rounded-lg shadow-lg border border-primary-green/20">
+                    <h3 class="text-2xl font-semibold mb-4 text-secondary-amber">Programming Languages</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-badge">Python</span>
+                        <span class="skill-badge">C++</span>
+                        <span class="skill-badge">JavaScript</span>
+                    </div>
+                </div>
+                <div class="bg-dark-card p-6 rounded-lg shadow-lg border border-primary-green/20">
+                    <h3 class="text-2xl font-semibold mb-4 text-secondary-amber">Web Technologies</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-badge">ReactJS</span>
+                        <span class="skill-badge">Tailwind CSS</span>
+                        <span class="skill-badge">Socket.IO</span>
+                        <span class="skill-badge">Redux</span>
+                        <span class="skill-badge">NodeJS</span>
+                        <span class="skill-badge">Flask</span>
+                        <span class="skill-badge">Firebase</span>
+                        <span class="skill-badge">MongoDB</span>
+                        <span class="skill-badge">PostgreSQL</span>
+                        <span class="skill-badge">MySQL</span>
+                    </div>
+                </div>
+                <div class="bg-dark-card p-6 rounded-lg shadow-lg border border-primary-green/20">
+                    <h3 class="text-2xl font-semibold mb-4 text-secondary-amber">Tools & Frameworks</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-badge">Git</span>
+                        <span class="skill-badge">Linux</span>
+                        <span class="skill-badge">Jupyter Notebook</span>
+                        <span class="skill-badge">React</span>
+                        <span class="skill-badge">Wireshark</span>
+                    </div>
+                </div>
+                <div class="bg-dark-card p-6 rounded-lg shadow-lg border border-primary-green/20">
+                    <h3 class="text-2xl font-semibold mb-4 text-secondary-amber">Cryptography & Security</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-badge">Data Protection</span>
+                        <span class="skill-badge">Digital Signatures</span>
+                        <span class="skill-badge">Encryption techniques</span>
+                        <span class="skill-badge">Network Security</span>
+                    </div>
+                </div>
+                <div class="bg-dark-card p-6 rounded-lg shadow-lg border border-primary-green/20">
+                    <h3 class="text-2xl font-semibold mb-4 text-secondary-amber">Soft Skills</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-badge">Problem-Solving</span>
+                        <span class="skill-badge">Critical Thinking</span>
+                        <span class="skill-badge">Adaptability</span>
+                        <span class="skill-badge">Research Skills</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-16 md:py-24">
+            <h2 class="text-4xl font-bold text-center mb-12 text-primary-green">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Project 1: Graph Clustering Algorithm -->
+                <div class="project-card">
+                    <h3 class="text-2xl font-semibold mb-2 text-primary-green">Graph Clustering Algorithm</h3>
+                    <p class="text-secondary-amber text-sm mb-4">C++, Graph Theory, Hashing</p>
+                    <p class="text-muted-text">
+                        Developed a C++ algorithm to cluster 500k+ nodes in a directed graph using dynamic thresholding and iterative
+                        merging. Achieved O(n log n) efficiency via hash-based lookups, enabling scalable processing of massive datasets.
+                    </p>
+                </div>
+
+                <!-- Project 2: Colibr´ı-Net -->
+                <div class="project-card">
+                    <h3 class="text-2xl font-semibold mb-2 text-primary-green">Colibr´ı-Net</h3>
+                    <p class="text-secondary-amber text-sm mb-4">Python, Socket API, Neural Networks, Cybersecurity</p>
+                    <p class="text-muted-text">
+                        Developed a smart proxy server integrated with a host-based intrusion detection system (HIDS), implementing
+                        signature-based detection techniques for real-time identification of malicious activity.
+                    </p>
+                </div>
+
+                <!-- Project 3: GIKOKO -->
+                <div class="project-card">
+                    <h3 class="text-2xl font-semibold mb-2 text-primary-green">GIKOKO</h3>
+                    <p class="text-secondary-amber text-sm mb-4">Flask, PostgreSQL, Bootstrap, AJAX</p>
+                    <p class="text-muted-text">
+                        Developed a Flask-based web application with PostgreSQL and Bootstrap, enabling seamless peer-to-peer connectivity
+                        at GIKI. Optimized query performance using indexed searches and integrated AJAX for real-time messaging.
+                    </p>
+                </div>
+
+                <!-- Project 4: CineMate -->
+                <div class="project-card">
+                    <h3 class="text-2xl font-semibold mb-2 text-primary-green">CineMate</h3>
+                    <p class="text-secondary-amber text-sm mb-4">React, Tailwind CSS, Firebase, Socket.IO</p>
+                    <p class="text-muted-text">
+                        Developed a real-time watch party platform for synchronized YouTube video playback, live reactions, and chat in
+                        virtual rooms.
+                    </p>
+                </div>
+
+                <!-- Project 5: Research Project: Metaverse Metamorphosis -->
+                <div class="project-card">
+                    <h3 class="text-2xl font-semibold mb-2 text-primary-green">Research Project: Metaverse Metamorphosis</h3>
+                    <p class="text-secondary-amber text-sm mb-4">Research, Blockchain, E-commerce, Gaming, Education</p>
+                    <p class="text-muted-text">
+                        Analyzed Metaverse applications in education, gaming, and e-Commerce, focusing on verification and
+                        personalization of blockchain-based credentials. Conducted cost-benefit modeling to assess scalability, adoption
+                        barriers, and ROI projections.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 md:py-24">
+            <h2 class="text-4xl font-bold text-center mb-12 text-primary-green">Contact Me</h2>
+            <div class="max-w-xl mx-auto bg-dark-card p-8 rounded-lg shadow-xl border border-secondary-amber/20">
+                <form action="mailto:syedfaiqhaider126@gmail.com" method="POST" enctype="text/plain" class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-light-text text-sm font-bold mb-2">Name</label>
+                        <input type="text" id="name" name="name" class="form-input" placeholder="Your Name" required>
+                    </div>
+                    <div>
+                        <label for="email" class="block text-light-text text-sm font-bold mb-2">Email</label>
+                        <input type="email" id="email" name="email" class="form-input" placeholder="your@email.com" required>
+                    </div>
+                    <div>
+                        <label for="message" class="block text-light-text text-sm font-bold mb-2">Message</label>
+                        <textarea id="message" name="message" rows="5" class="form-input" placeholder="Your message..." required></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-primary-green text-dark-bg font-bold py-3 px-4 rounded-md hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-primary-green/30">
+                        Send Message
+                    </button>
+                </form>
+
+                <div class="mt-8 text-center">
+                    <p class="text-lg font-semibold text-secondary-amber mb-4">Connect with me:</p>
+                    <div class="flex justify-center space-x-6">
+                        <a href="https://github.com/faiqhaider25" target="_blank" rel="noopener noreferrer" class="social-link">
+                            GitHub
+                        </a>
+                        <a href="https://linkedin.com/in/syed-faiq-haider-naqvi" target="_blank" rel="noopener noreferrer" class="social-link">
+                            LinkedIn
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="py-8 text-center text-muted-text text-sm border-t border-primary-green/10 mt-16">
+            <p>&copy; 2023 Syed Faiq Haider Naqvi. All rights reserved.</p>
+        </footer>
+
+    </div>
+
+    <style>
+        /* Custom styles for Tailwind components */
+        .skill-badge {
+            @apply bg-dark-bg text-light-text rounded-full px-4 py-1 text-sm border border-secondary-amber hover:bg-secondary-amber hover:text-dark-bg transition-colors duration-200;
+        }
+
+        .project-card {
+            @apply bg-dark-card p-6 rounded-lg shadow-lg border border-primary-green/20 hover:border-secondary-amber/50 transition-all duration-300 transform hover:-translate-y-1;
+        }
+
+        .form-input {
+            @apply w-full p-3 rounded-md bg-dark-bg border border-primary-green/50 text-light-text focus:outline-none focus:ring-2 focus:ring-primary-green focus:border-transparent transition-all duration-200;
+        }
+
+        .social-link {
+            @apply text-primary-green hover:text-secondary-amber text-lg font-medium transition-colors duration-200;
+        }
+    </style>
+</body>
+</html>
