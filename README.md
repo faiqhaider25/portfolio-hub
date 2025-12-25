@@ -26,7 +26,7 @@ Each user gets a dedicated directory based on a sanitized version of their email
 ## 🛠️ Tech Stack
 
 - **Workflow Automation:** n8n
-- **AI Model:** OpenAI GPT-4o
+- **AI Model:** Gemini
 - **Styling:** Tailwind CSS (CDN)
 - **Hosting:** GitHub Pages
 
