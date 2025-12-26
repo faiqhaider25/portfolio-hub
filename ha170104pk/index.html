@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syed Faiq Haider Naqvi - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .animate-fadeIn {
+            animation: fadeIn 1s ease-out forwards;
+        }
+
+        .gradient-text-purple-red {
+            background: linear-gradient(90deg, #8b5cf6, #ef4444);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
+        }
+
+        body {
+            background-color: #111827; /* Dark background */
+            color: #e5e7eb; /* Light text */
+            font-family: 'Inter', sans-serif; /* Modern sans-serif */
+        }
+
+        .section {
+            padding: 60px 20px;
+            scroll-margin-top: 80px; /* For smooth scrolling with fixed header */
+        }
+
+        .card {
+            background-color: #1f2937; /* Slightly lighter dark card background */
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15), 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-primary {
+            background: linear-gradient(90deg, #8b5cf6, #ef4444);
+            color: white;
+            font-weight: 600;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.375rem;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(139, 92, 246, 0.4), 0 4px 6px rgba(239, 68, 68, 0.3);
+        }
+
+        .btn-secondary {
+            border: 1px solid #8b5cf6;
+            color: #8b5cf6;
+            background-color: transparent;
+            font-weight: 600;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.375rem;
+            transition: all 0.3s ease;
+        }
+
+        .btn-secondary:hover {
+            background: linear-gradient(90deg, #8b5cf6, #ef4444);
+            color: white;
+            transform: scale(1.05);
+        }
+
+        .skill-badge {
+            background-color: #2563eb; /* Tailwind blue-500 for contrast */
+            color: white;
+            padding: 0.375rem 0.75rem;
+            border-radius: 9999px; /* Pills */
+            font-size: 0.875rem;
+            margin: 0.25rem;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .skill-badge:hover {
+            background-color: #1d4ed8; /* Tailwind blue-600 */
+        }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #111827;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(180deg, #8b5cf6, #ef4444);
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(180deg, #a78bfa, #f87171);
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 bg-gray-800 bg-opacity-80 backdrop-blur-md z-50 py-4 shadow-lg">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold gradient-text-purple-red">Faiq Haider</a>
+            <ul class="flex space-x-6">
+                <li><a href="#about" class="hover:text-purple-400 transition duration-300">About</a></li>
+                <li><a href="#skills" class="hover:text-purple-400 transition duration-300">Skills</a></li>
+                <li><a href="#projects" class="hover:text-purple-400 transition duration-300">Projects</a></li>
+                <li><a href="#contact" class="hover:text-purple-400 transition duration-300">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="min-h-screen flex items-center justify-center text-center px-4">
+        <div class="animate-fadeIn">
+            <p class="text-xl md:text-2xl text-gray-300 mb-4">"The future belongs to those who believe in the beauty of their dreams."</p>
+            <h1 class="text-5xl md:text-7xl font-extrabold gradient-text-purple-red mb-6">Syed Faiq Haider Naqvi</h1>
+            <h2 class="text-2xl md:text-3xl text-gray-300 mb-8">Computer Science Student | Aspiring Frontend Developer</h2>
+            <a href="#projects" class="btn-primary inline-block px-8 py-3 rounded-lg text-xl font-semibold shadow-lg transform hover:scale-105 transition duration-300">View My Work</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section bg-gray-900">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12 gradient-text-purple-red">About Me</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="card p-8">
+                    <h3 class="text-3xl font-semibold mb-6">My Journey</h3>
+                    <p class="text-lg leading-relaxed">
+                        A driven Computer Science student from Ghulam Ishaq Khan Institute of Engineering Sciences and Technology (GIKI), pursuing a Bachelor's degree. My objective is to leverage hands-on experience, embrace continuous learning, and contribute meaningfully to innovative projects. I am passionate about building robust and user-friendly web applications, with a keen interest in modern web technologies and cybersecurity.
+                    </p>
+                    <p class="text-lg leading-relaxed mt-4">
+                        My academic journey from 2022 to 2026 is focused on developing a strong foundation in computer science principles, with a particular emphasis on software development and a growing expertise in frontend technologies.
+                    </p>
+                </div>
+                <div class="card p-8 text-center">
+                    <h3 class="text-3xl font-semibold mb-6">Education</h3>
+                    <p class="text-2xl font-bold gradient-text-purple-red">Bachelor of Computer Science</p>
+                    <p class="text-xl text-gray-300 mb-2">Ghulam Ishaq Khan Institute of Engineering Sciences and Technology (GIKI)</p>
+                    <p class="text-lg text-gray-400">(2022 - 2026)</p>
+                    <p class="mt-6 text-lg italic text-gray-400">"Seeking opportunities that offer hands-on experience, continuous learning, and the chance to make meaningful contributions to innovative projects."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section bg-gray-800">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12 gradient-text-purple-red">Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">Programming Languages</h3>
+                    <div class="flex flex-wrap">
+                        <span class="skill-badge">Python</span>
+                        <span class="skill-badge">C++</span>
+                        <span class="skill-badge">JavaScript</span>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">Web Technologies</h3>
+                    <div class="flex flex-wrap">
+                        <span class="skill-badge">ReactJS</span>
+                        <span class="skill-badge">Tailwind CSS</span>
+                        <span class="skill-badge">NodeJS</span>
+                        <span class="skill-badge">Flask</span>
+                        <span class="skill-badge">Firebase</span>
+                        <span class="skill-badge">MongoDB</span>
+                        <span class="skill-badge">PostgreSQL</span>
+                        <span class="skill-badge">MySQL</span>
+                        <span class="skill-badge">Socket.IO</span>
+                        <span class="skill-badge">Redux</span>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">Tools & Frameworks</h3>
+                    <div class="flex flex-wrap">
+                        <span class="skill-badge">Git</span>
+                        <span class="skill-badge">Linux</span>
+                        <span class="skill-badge">Jupyter Notebook</span>
+                        <span class="skill-badge">Wireshark</span>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">Cryptography & Security</h3>
+                    <div class="flex flex-wrap">
+                        <span class="skill-badge">Data Protection</span>
+                        <span class="skill-badge">Digital Signatures</span>
+                        <span class="skill-badge">Encryption Techniques</span>
+                        <span class="skill-badge">Network Security</span>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">Soft Skills</h3>
+                    <div class="flex flex-wrap">
+                        <span class="skill-badge">Problem-Solving</span>
+                        <span class="skill-badge">Critical Thinking</span>
+                        <span class="skill-badge">Adaptability</span>
+                        <span class="skill-badge">Research Skills</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section bg-gray-900">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12 gradient-text-purple-red">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <div class="card p-6 flex flex-col">
+                    <h3 class="text-2xl font-semibold mb-3 gradient-text-purple-red">Graph Clustering Algorithm</h3>
+                    <p class="text-sm text-gray-400 mb-4">C++, Graph Theory, Hashing</p>
+                    <p class="text-base leading-relaxed mb-6 flex-grow">Developed a C++ algorithm to cluster 500k+ nodes in a directed graph using dynamic thresholding and iterative merging. Achieved O(n log n) efficiency via hash-based lookups, enabling scalable processing of massive datasets.</p>
+                    <div class="mt-auto">
+                        <a href="https://github.com/faiqhaider25/Graph-Clustering-Algorithm" target="_blank" class="btn-secondary inline-block px-5 py-2 rounded-lg text-sm font-semibold mr-3">GitHub</a>
+                    </div>
+                </div>
+
+                <div class="card p-6 flex flex-col">
+                    <h3 class="text-2xl font-semibold mb-3 gradient-text-purple-red">Colibrí-Net</h3>
+                    <p class="text-sm text-gray-400 mb-4">Python, Socket API, Neural Networks, Cybersecurity</p>
+                    <p class="text-base leading-relaxed mb-6 flex-grow">Developed a smart proxy server integrated with a host-based intrusion detection system (HIDS), implementing signature-based detection techniques for real-time identification of malicious activity.</p>
+                    <div class="mt-auto">
+                        <a href="https://github.com/faiqhaider25/Colibri-Net" target="_blank" class="btn-secondary inline-block px-5 py-2 rounded-lg text-sm font-semibold mr-3">GitHub</a>
+                    </div>
+                </div>
+
+                <div class="card p-6 flex flex-col">
+                    <h3 class="text-2xl font-semibold mb-3 gradient-text-purple-red">GIKOKO</h3>
+                    <p class="text-sm text-gray-400 mb-4">Flask, PostgreSQL, Bootstrap, AJAX</p>
+                    <p class="text-base leading-relaxed mb-6 flex-grow">Developed a Flask-based web application with PostgreSQL and Bootstrap, enabling seamless peer-to-peer connectivity at GIKI. Optimized query performance using indexed searches and integrated AJAX for real-time messaging.</p>
+                    <div class="mt-auto">
+                        <a href="https://github.com/faiqhaider25/GIKOKO" target="_blank" class="btn-secondary inline-block px-5 py-2 rounded-lg text-sm font-semibold mr-3">GitHub</a>
+                    </div>
+                </div>
+
+                <div class="card p-6 flex flex-col">
+                    <h3 class="text-2xl font-semibold mb-3 gradient-text-purple-red">CineMate</h3>
+                    <p class="text-sm text-gray-400 mb-4">React, Tailwind CSS, Firebase, Socket.IO</p>
+                    <p class="text-base leading-relaxed mb-6 flex-grow">Developed a real-time watch party platform for synchronized YouTube video playback, live reactions, and chat in virtual rooms.</p>
+                    <div class="mt-auto">
+                        <a href="https://github.com/faiqhaider25/CineMate" target="_blank" class="btn-secondary inline-block px-5 py-2 rounded-lg text-sm font-semibold mr-3">GitHub</a>
+                    </div>
+                </div>
+
+                <div class="card p-6 flex flex-col">
+                    <h3 class="text-2xl font-semibold mb-3 gradient-text-purple-red">Research Project: Metaverse Metamorphosis</h3>
+                    <p class="text-sm text-gray-400 mb-4">Research, Blockchain, Web3</p>
+                    <p class="text-base leading-relaxed mb-6 flex-grow">Analyzed Metaverse applications in education, gaming, and e-Commerce, focusing on verification and personalization of blockchain-based credentials. Conducted cost-benefit modeling to assess scalability, adoption barriers, and ROI projections.</p>
+                    <div class="mt-auto">
+                        <!-- No direct GitHub link provided for research, add if available -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section bg-gray-800">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12 gradient-text-purple-red">Get In Touch</h2>
+            <div class="max-w-3xl mx-auto card p-8">
+                <p class="text-lg text-center mb-8">
+                    Have a project in mind or just want to say hello? Feel free to reach out!
+                </p>
+                <form action="mailto:syedfaiqhaider126@gmail.com" method="post" enctype="text/plain" class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-lg font-medium mb-2">Name</label>
+                        <input type="text" id="name" name="Name" required class="w-full p-3 rounded-lg bg-gray-700 border border-gray-600 focus:ring-purple-500 focus:border-purple-500 text-gray-200">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-lg font-medium mb-2">Email</label>
+                        <input type="email" id="email" name="Email" required class="w-full p-3 rounded-lg bg-gray-700 border border-gray-600 focus:ring-purple-500 focus:border-purple-500 text-gray-200">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-lg font-medium mb-2">Message</label>
+                        <textarea id="message" name="Message" rows="6" required class="w-full p-3 rounded-lg bg-gray-700 border border-gray-600 focus:ring-purple-500 focus:border-purple-500 text-gray-200"></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn-primary px-10 py-3 rounded-lg text-lg font-semibold shadow-lg">Send Message</button>
+                    </div>
+                </form>
+            </div>
+            <div class="text-center mt-12">
+                <p class="text-lg mb-4">Connect with me on:</p>
+                <div class="flex justify-center space-x-6">
+                    <a href="https://github.com/faiqhaider25" target="_blank" class="hover:text-purple-400 transition duration-300">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.416 2.863 8.175 6.838 9.473-.025.292-.034.604-.034.916.001.348.037.684.102.997.046.217.1.42.183.6.156.35.346.65.562.9.229.248.477.477.746.694.269.217.55.425.855.604.305.18.64.345.998.484.358.139.737.247 1.14.325.403.078.812.117 1.226.117.414 0 .823-.039 1.226-.117.403-.078.737-.146 1.002-.305.305-.18.598-.388.857-.604.269-.218.517-.447.747-.694.229-.223.46-.442.634-.746.065-.302.101-.638.101-.997 0-.312-.009-.624-.034-.916 4.007-1.3 6.838-5.06 6.838-9.473C22 6.477 17.523 2 12 2zM7.077 18.103C6.617 18.207 6.118 18.25 5.62 18.25c-3.065 0-5.62-2.555-5.62-5.62 0-1.1.373-2.11.997-2.937.147-.207.331-.39.54-.54.287-.217.593-.394.909-.532.48-.227.985-.374 1.503-.447.518-.073.997-.113 1.438-.113.44 0 .863.04 1.277.113.518.073.997.22 1.504.447.317.14.622.316.909.532.209.15.393.333.54.54.624.827.997 1.837.997 2.937 0 3.065-2.555 5.62-5.62 5.62z"></path></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/syed-faiq-haider-naqvi/" target="_blank" class="hover:text-purple-400 transition duration-300">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.329-.069-3.03-1.752-3.03-1.759 0-2.015 1.371-2.015 2.953v5.644H9.338V7.873h3.568v1.627h.05.057c.444-.814 1.532-1.574 3.145-1.574 3.358 0 3.973 2.215 3.973 5.096v6.275zM6.972 5.858c-.977 0-1.769-.792-1.769-1.769s.792-1.769 1.769-1.769 1.769.792 1.769 1.769-.792 1.769-1.769 1.769zM4.197 20.452h3.554V7.873h-3.554v12.579z"></path></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 text-center text-gray-500 text-sm">
+        <p>&copy; 2023 Syed Faiq Haider Naqvi. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
